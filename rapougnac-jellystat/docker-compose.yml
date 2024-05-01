@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: rapougnac-jellystat_jellystat_1
-      APP_PORT: 9680
+      APP_PORT: 3000
   jellystat-db:
     image: postgres:15.2
     environment:
