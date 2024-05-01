@@ -9,6 +9,8 @@ description: >
   Imagine you have a special notebook where you can write down all the media you have consumed, like books you've read, shows you have watched, video games you have played or workouts you have done. Now, imagine that instead of a physical notebook, you have a special tool on your computer or phone that lets you keep track of all these digitally.developer: "Thomiceli"
 website: https://ignisda.github.io/ryot/index.html
 support: https://github.com/IgnisDa/ryot/issues
+developer: IgnisDa
 port: 5243
 path: ''
 defaultPassword: ''
+submitter: Rapougnac
