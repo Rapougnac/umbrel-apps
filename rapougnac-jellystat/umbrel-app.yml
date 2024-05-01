@@ -1,7 +1,8 @@
 manifestVersion: 1
 id: rapougnac-jellystat
 version: '1.0.9'
-tagline: "Jellystat"
+name: "Jellystat"
+tagline: "Stats for Jellyfin"
 category: "Media"
 icon: "https://raw.githubusercontent.com/CyferShepard/Jellystat/main/public/icon-b-512.png"
 description: >
