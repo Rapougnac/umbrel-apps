@@ -28,5 +28,3 @@ services:
     depends_on:
       - jellystat-db
     restart: unless-stopped
-networks:
-  default:
