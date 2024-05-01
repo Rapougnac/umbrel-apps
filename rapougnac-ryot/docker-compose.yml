@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: rapougnac-ryot_ryot_1
-      APP_PORT: 8000
+      APP_PORT: 3000
   ryot-db:
     image: postgres:16-alpine # atleast version 15 is required
     restart: unless-stopped
