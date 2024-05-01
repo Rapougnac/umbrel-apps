@@ -14,14 +14,13 @@ services:
     - ${APP_DATA_DIR}/data/postgresql:/var/lib/postgresql/data
   jellystat:
     image: cyfershepard/jellystat:1.0.9
+    user: "1000:1000"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: mypassword
       POSTGRES_IP: jellystat-db
       POSTGRES_PORT: 5432
       JWT_SECRET: 'my-secret-jwt-key'
-    ports:
-      - "3000:3000" #Server Port
     volumes:
       - ${APP_DATA_DIR}/data/backup-data:/app/backend/backup-data
 
