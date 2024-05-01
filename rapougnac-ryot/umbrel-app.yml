@@ -1,0 +1,14 @@
+manifestVersion: 1
+id: rapougnac-ryot
+name: "Ryot"
+version: '5.0.11'
+category: "Misc"
+tagline: "Ryot aims to be the only self hosted tracker you will ever need!"
+icon: "https://raw.githubusercontent.com/IgnisDa/ryot/main/libs/assets/icon-512x512.png"
+description: >
+  Imagine you have a special notebook where you can write down all the media you have consumed, like books you've read, shows you have watched, video games you have played or workouts you have done. Now, imagine that instead of a physical notebook, you have a special tool on your computer or phone that lets you keep track of all these digitally.developer: "Thomiceli"
+website: https://ignisda.github.io/ryot/index.html
+support: https://github.com/IgnisDa/ryot/issues
+port: 5243
+path: ''
+defaultPassword: ''
