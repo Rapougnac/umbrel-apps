@@ -1,5 +1,9 @@
-version: '3'
+version: '3.7'
 services:
+  app_proxy:
+    environment:
+      APP_HOST: rapougnac-jellystat_jellystat_1
+      APP_PORT: 9680
   jellystat-db:
     image: postgres:15.2
     environment:
@@ -17,7 +21,7 @@ services:
       POSTGRES_PORT: 5432
       JWT_SECRET: 'my-secret-jwt-key'
     ports:
-      - "9680:3000" #Server Port
+      - "3000:3000" #Server Port
     volumes:
       - ${APP_DATA_DIR}/data/backup-data:/app/backend/backup-data
 
