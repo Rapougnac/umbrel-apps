@@ -1,0 +1,41 @@
+manifestVersion: 1
+id: rapougnac-jellystat
+version: '1.0.9'
+tagline: "Jellyfin statistics"
+category: "Media"
+icon: "https://raw.githubusercontent.com/CyferShepard/Jellystat/main/public/icon-b-512.png"
+description: >
+  Jellystat is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)
+developer: "CyferShepard"
+website: https://github.com/CyferShepard/Jellystat
+support: https://github.com/CyferShepard/Jellystat/issues
+port: 9680
+gallery:
+  - https://raw.githubusercontent.com/CyferShepard/Jellystat/main/screenshots/Home.PNG
+  - https://raw.githubusercontent.com/CyferShepard/Jellystat/main/screenshots/Users.PNG
+  - https://raw.githubusercontent.com/CyferShepard/Jellystat/main/screenshots/Activity.PNG
+  - https://raw.githubusercontent.com/CyferShepard/Jellystat/main/screenshots/Libraries.PNG
+  - https://raw.githubusercontent.com/CyferShepard/Jellystat/main/screenshots/settings.PNG
+path: ''
+defaultPassword: ''
+releaseNotes: >
+  What's Changed
+
+    Update to main by @CyferShepard in #71
+    Merge from main to unstable by @CyferShepard in #79
+    sql injection is openbar by @LaSylv in #100
+    bring in new changes to unstable by @CyferShepard in #105
+    Display the subtitle stream for a given session by @DaftFuzz in #108
+    Bugfix/variables casing by @DaftFuzz in #109
+    Show sessions ETA by @foux in #112
+    Update docker-image.yml by @CyferShepard in #114
+    Update docker-image.yml by @CyferShepard in #113
+    add links to last-watched-card by @DaftFuzz in #120
+    Feature/geolocate ip by @DaftFuzz in #123
+    fix NaN for live tv playback by @DaftFuzz in #125
+    Vite by @c4lyp5o in #124
+    Feature/geolocate ip by @DaftFuzz in #126
+    Sync optimizations by @CyferShepard in #127
+    Merge Unstable to Main 1.0.8 -> 1.0.9 by @CyferShepard in #134
+submitter: Rapougnac
+submission:
