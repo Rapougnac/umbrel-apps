@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: nebula-grafana
+id: rapougnac-grafana
 name: Grafana
 category: Monitoring
 version: "10.0.3"
