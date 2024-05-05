@@ -4,4 +4,4 @@ scrape_configs:
     metrics_path: '/api/metrics'
     bearer_token: '<YOUR_TOKEN>'
     static_configs:
-      - targets: ['rapougnac-wakapi_wakapi_1:4142']
+      - targets: ['rapougnac-wakapi_wakapi_1:3000']
