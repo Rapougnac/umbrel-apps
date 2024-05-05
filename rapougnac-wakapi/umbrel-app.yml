@@ -1,0 +1,17 @@
+manifestVersion: 1
+id: rapougnac-wakapi
+name: "WakApi"
+version: '2.11.1'
+category: "Development"
+tagline: "A minimalist, self-hosted WakaTime-compatible backend for coding statistics."
+icon: "https://wakapi.dev/assets/images/favicon-32x32.png"
+description: >
+  A minimalist, self-hosted WakaTime-compatible backend for coding statistics.
+developer: "muety"
+website: https://wakapi.dev
+support: https://github.com/muety/wakapi/issues
+port: 4142
+gallery:
+  - https://github.com/muety/wakapi/raw/master/static/assets/images/screenshot.webp
+path: ''
+defaultPassword: ''
