@@ -10,7 +10,7 @@ services:
       - ${APP_DATA_DIR}/data/wakapi:/data
     environment:
       WAKAPI_EXPOSE_METRICS: true
-      WAKAPI_PASSWORD_SALT: '${SALT}'
+      WAKAPI_PASSWORD_SALT: "${SALT}"
   prometheus:
     image: prom/prometheus:latest
     restart: unless-stopped
@@ -18,10 +18,14 @@ services:
       - ${APP_DATA_DIR}/data/prometheus:/prometheus
       - ${APP_DATA_DIR}/data/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
+      - "--config.file=/etc/prometheus/prometheus.yml"
     environment:
       PROMETHEUS_CONFIG_FILE: /etc/prometheus/prometheus.yml
-    ports:
-      - "9090:9090"
+    networks:
+      - prom
     depends_on:
       - wakapi
+
+networks:
+  prom:
+    driver: bridge
