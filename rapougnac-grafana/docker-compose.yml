@@ -12,9 +12,3 @@ services:
     volumes:
       - ${APP_DATA_DIR}/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
       - ${APP_DATA_DIR}/data:/var/lib/grafana
-    networks:
-      - prometheus_prom
-
-networks:
-  prometheus_prom:
-    external: true
