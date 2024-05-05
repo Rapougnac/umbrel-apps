@@ -10,6 +10,7 @@ services:
       - ${APP_DATA_DIR}/data/wakapi:/data
     environment:
       WAKAPI_EXPOSE_METRICS: true
+      WAKAPI_PASSWORD_SALT: '${SALT}'
   prometheus:
     image: prom/prometheus:latest
     restart: unless-stopped
