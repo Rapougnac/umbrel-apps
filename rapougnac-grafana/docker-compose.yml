@@ -8,6 +8,7 @@ services:
     image: grafana/grafana-enterprise:10.4.2
     restart: on-failure
     stop_grace_period: 1m
+    user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
       - ${APP_DATA_DIR}/data:/var/lib/grafana
