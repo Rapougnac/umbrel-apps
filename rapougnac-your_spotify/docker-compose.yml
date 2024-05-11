@@ -21,7 +21,7 @@ services:
     container_name: mongo
     image: mongo:6
     volumes:
-      - ${UMBREL_APP_DATA}/data/your_spotify_db:/data/db
+      - ${APP_DATA_DIR}/data/your_spotify_db:/data/db
 
   web:
     image: yooooomi/your_spotify_client
