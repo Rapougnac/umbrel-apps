@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: rapougnac-your_spotify_server_1
+      APP_PORT: 3000
+  server:
+    image: yooooomi/your_spotify_server
+    restart: always
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    environment:
+      API_ENDPOINT: http://localhost:8080 # This MUST be included as a valid URL in the spotify dashboard (see below)
+      CLIENT_ENDPOINT: http://localhost:3000
+      SPOTIFY_PUBLIC: e0f4ad67f42844d2abcb234f0b16284d
+      SPOTIFY_SECRET: 4b25eece023e4b138b4db2a056f0aa12
+  mongo:
+    container_name: mongo
+    image: mongo:6
+    volumes:
+      - ${UMBREL_APP_DATA}/data/your_spotify_db:/data/db
+
+  web:
+    image: yooooomi/your_spotify_client
+    restart: always
+    environment:
+      API_ENDPOINT: http://localhost:8080
+    network_mode: container:server
