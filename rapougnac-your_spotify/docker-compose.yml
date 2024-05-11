@@ -18,15 +18,24 @@ services:
       CLIENT_ENDPOINT: http://localhost:3000
       SPOTIFY_PUBLIC: e0f4ad67f42844d2abcb234f0b16284d
       SPOTIFY_SECRET: 4b25eece023e4b138b4db2a056f0aa12
+    networks:
+      - your_spotify_network
   mongo:
     container_name: mongo
     image: mongo:6
     volumes:
       - ${APP_DATA_DIR}/data/your_spotify_db:/data/db
+    networks:
+      - your_spotify_network
 
   web:
     image: yooooomi/your_spotify_client
     restart: always
     environment:
       API_ENDPOINT: http://localhost:8080
-    network_mode: container:your_spotify_server
+    networks:
+      - your_spotify_network
+
+networks:
+  your_spotify_network:
+    driver: bridge
