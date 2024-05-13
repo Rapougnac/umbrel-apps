@@ -8,5 +8,5 @@ services:
   sillytavern:
     image: ghcr.io/sillytavern/sillytavern:release
     restart: unless-stopped
-    ports:
-      - "8000:8000"
+    volumes:
+      - "./config.yaml:/home/node/app/config.yaml"
