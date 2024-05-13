@@ -3,6 +3,6 @@ services:
     environment:
       APP_HOST: rapougnac-sillytavern_sillytavern_1
       APP_PORT: 8000
-  wakapi:
+  sillytavern:
     image: ghcr.io/sillytavern/sillytavern:release
     restart: unless-stopped
