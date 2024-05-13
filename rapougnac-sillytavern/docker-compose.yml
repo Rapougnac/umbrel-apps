@@ -8,3 +8,5 @@ services:
   sillytavern:
     image: ghcr.io/sillytavern/sillytavern:release
     restart: unless-stopped
+    ports:
+      - "8000:8000"
