@@ -7,4 +7,4 @@ services:
     image: ghcr.io/sillytavern/sillytavern:release
     restart: unless-stopped
     volumes:
-      - "./data:/home/node/app/"
+      - "./data:/home/node/app/default"
