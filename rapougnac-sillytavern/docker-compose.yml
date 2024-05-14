@@ -7,4 +7,4 @@ services:
     image: ghcr.io/sillytavern/sillytavern:release
     restart: unless-stopped
     volumes:
-      - "./config.yaml:/home/node/app/config.yaml"
+      - "./data/config.yaml:/home/node/app/config.yaml"
