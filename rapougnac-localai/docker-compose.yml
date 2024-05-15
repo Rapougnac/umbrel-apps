@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: localai_api_1
+      APP_HOST: rapougnac-localai_api_1
       APP_PORT: 8080
       PROXY_AUTH_WHITELIST: "/v1/*"
   api:

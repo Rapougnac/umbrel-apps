@@ -1,6 +1,6 @@
 manifestVersion: 1
-id: localai
-category: ai
+id: rapougnac-localai
+category: "Misc"
 name: LocalAI
 version: "v2.14.0"
 tagline: Drop-in OpenAI replacement
