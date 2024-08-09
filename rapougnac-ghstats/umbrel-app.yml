@@ -1,0 +1,11 @@
+manifestVersion: 1
+id: rapougnac-ghstats
+name: "GhStats"
+version: "0.1.0"
+category: "Development"
+tagline: "Self-hosted dashboard for tracking GitHub repos traffic history longer than 14 days."
+description: >
+   Self-hosted dashboard for tracking GitHub repos traffic history longer than 14 days.
+developer: "vladkens"
+support: https://github.com/vladkens/ghstats/issues
+port: 4789

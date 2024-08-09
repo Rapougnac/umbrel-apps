@@ -1,0 +1,12 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: rapougnac-ghstats_ghstats_1
+      APP_PORT: 8080
+  ghstats:
+    image: ghcr.io/vladkens/ghstats:latest
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/data/ghstats:/app/data
+    environment:
+      - GITHUB_TOKEN=???
