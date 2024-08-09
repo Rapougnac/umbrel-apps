@@ -3,6 +3,7 @@ id: rapougnac-ghstats
 name: "GhStats"
 version: "0.1.0"
 category: "Development"
+icon: https://uwu.rapougnac.moe/u/6CX6iZ.png
 tagline: "Self-hosted dashboard for tracking GitHub repos traffic history longer than 14 days."
 description: >
    Self-hosted dashboard for tracking GitHub repos traffic history longer than 14 days.
